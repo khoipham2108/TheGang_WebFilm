@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../../public/images/logo.png";
+
 import { 
   HiHome, 
   HiMagnifyingGlass, 
@@ -196,7 +196,7 @@ const Header: React.FC = () => {
             {/* Logo */}
             <Link style={{ marginRight: 24, marginTop: ".5rem" }} to="/" className="flex-shrink-0 transition-transform duration-200 hover:scale-105">
               <img 
-                src={logo} 
+                src="/images/logo.png"
                 className="h-8 lg:h-20 w-auto object-contain" 
                 alt="The Gangs Logo" 
               />
