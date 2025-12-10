@@ -7,7 +7,7 @@ _origin_env = os.environ.get("FRONTEND_ORIGIN")
 if _origin_env:
     FRONTEND_ORIGINS = [o.strip() for o in _origin_env.split(',') if o.strip()]
 else:
-    FRONTEND_ORIGINS = ["http://localhost:3000", "http://localhost:5173"]
+    FRONTEND_ORIGINS = ["http://localhost:3000", "http://localhost:5173", "https://the-gang-web-film.vercel.app"]
 
 app = FastAPI(title="Movies API", docs_url="/docs", redoc_url="/redoc")
 
