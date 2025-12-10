@@ -1,7 +1,11 @@
 // src/services/authApi.tsx
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:8000/api/auth'
+// Lấy link từ biến môi trường (nếu có), nếu không thì dùng localhost
+const ROOT_API = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000/api';
+
+// Nối thêm đuôi /auth vào
+const BASE_URL = `${ROOT_API}/auth`;
 
 const authApi = axios.create({
   baseURL: BASE_URL,
